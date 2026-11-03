@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio cá nhân của Lâm Hiếu Đức — sinh viên Trí tuệ nhân tạo và ứng dụng.">
+  <title>Lâm Hiếu Đức — Digital CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <div class="pixel-forest-scene" id="pixelForestScene" aria-hidden="true">
+      <span class="pixel-cloud cloud-a"></span><span class="pixel-cloud cloud-b"></span><span class="pixel-cloud cloud-c"></span>
+      <span class="pixel-forest-tree tree-a"></span><span class="pixel-forest-tree tree-b"></span>
+      <span class="pixel-forest-tree tree-c"></span><span class="pixel-forest-tree tree-d"></span>
+      <span class="pixel-forest-tree tree-e"></span>
+      <span class="pixel-forest-shrub shrub-a"></span><span class="pixel-forest-shrub shrub-b"></span>
+      <span class="pixel-forest-shrub shrub-c"></span><span class="pixel-forest-shrub shrub-d"></span>
+      <span class="pixel-forest-hill far-hill"></span><span class="pixel-forest-hill"></span>
+      <span class="pixel-forest-flower" style="--flower-x:8%;--flower-y:7%"></span>
+      <span class="pixel-forest-flower" style="--flower-x:28%;--flower-y:4%"></span>
+      <span class="pixel-forest-flower" style="--flower-x:55%;--flower-y:6%"></span>
+      <span class="pixel-forest-flower" style="--flower-x:87%;--flower-y:5%"></span>
+    </div>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="#home" aria-label="Về đầu trang">
+          <span class="brand-mark">★</span>
+          <span class="brand-copy"><strong>Lâm Hiếu Đức</strong><span></span></span>
+        </a>
+        <nav class="nav-links" id="navLinks" aria-label="Điều hướng chính">
+          <a href="#home" class="active">Trang chủ</a>
+          <a href="#about">Giới thiệu</a>
+          <a href="#skills">Kỹ năng</a>
+          <a href="#projects">Dự án</a>
+          <a href="#journey">Hành trình</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-button" id="musicToggle" type="button" aria-pressed="false" title="Phát hoặc tạm dừng nhạc nền" aria-label="Phát nhạc nền">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <span id="musicLabel">Phát nhạc</span>
+          </button>
+          <a class="button button-primary" href="#contact">Kết nối với mình <span aria-hidden="true">↗</span></a>
+        </div>
+        <button class="menu-button" id="menuToggle" type="button" aria-label="Mở menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-view active-view" id="home">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="status-dot"></span> Đang học hỏi · Sẵn sàng cho cơ hội mới</div>
+            <h1>Xin chào,<br>mình là <span class="gradient-text">Hiếu Đức.</span></h1>
+            <p class="hero-role">Sinh viên · Công nghệ thông tin</p>
+            <div class="player-hud" aria-label="Bảng trạng thái người chơi">
+              <div class="player-hud-top"><span>PLAYER TERMINAL // 001</span><span class="player-hud-online">● ONLINE</span></div>
+              <div class="player-hud-grid">
+                <div class="player-hud-stat"><span>PLAYER</span><strong>HIẾU ĐỨC</strong></div>
+                <div class="player-hud-stat"><span>CLASS</span><strong>GAME DESIGNER</strong></div>
+                <div class="player-hud-stat"><span>MAIN QUEST</span><strong>DỰ ÁN WEB</strong></div>
+              </div>
+              <div class="player-hud-xp"><span>EXPERIENCE</span><div class="player-hud-meter"><i></i></div><strong>LV 4</strong></div>
+            </div>
+            <p class="hero-description">Mình thích thiết kế và tạo ra các sản phảm nhỏ theo ý tưởng cá nhân. Đây là nơi mình sẽ chia sẽ những cuộc hành trình của mình, dự án cá nhân và những thứ mình đang học hỏi.</p>
+            <p class="hero-description" style="margin-top:-12px">Hiện tại mình đang <span class="typing" id="typedText">học lập trình web</span><span class="typing" aria-hidden="true">▍</span></p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Xem dự án</a>
+              <button class="button button-secondary" id="printCV" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg> Lưu CV / PDF</button>
+            </div>
+            <div class="social-row" aria-label="Liên kết mạng xã hội">
+              <a class="social-link" href="https://github.com/HieuDuc0065" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.13c-3.1.68-3.75-1.31-3.75-1.31-.51-1.3-1.24-1.65-1.24-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.1-1.43 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.16 1.78 1.16 3 0 4.29-2.61 5.24-5.1 5.52.4.35.75 1.03.75 2.08v3.1c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg></a>
+              <a class="social-link" href="mailto:duclh0065@ut.edu.vn" aria-label="Gửi email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></a>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Ảnh profile cá nhân">
+            <div class="hero-profile-card">
+              <div class="profile-photo-halo"><img class="owner-profile-photo" src="./image/avatar.jpg" alt="Ảnh profile của Lâm Hiếu Đức"></div>
+              <div class="hero-profile-caption"><strong>Lâm Hiếu Đức</strong><span>Sinh viên · Công nghệ thông tin</span></div>
+            </div>
+            <span class="sparkle one">✦</span><span class="sparkle two">✧</span><span class="sparkle three">✦</span>
+            <img src="./image/avatar.jpg" alt="Minh họa nhân vật phong cách anime trong khung cảnh xanh đêm" fetchpriority="high">
+            <div class="art-note"><span aria-hidden="true" style="font-size:1.4rem">✧</span><div><strong>Dream · Learn · Build</strong><span>Mỗi ngày tiến bộ một chút</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="mini-strip" aria-label="Thông tin nhanh">
+        <div class="shell strip-inner">
+          <div class="strip-item"><span class="tiny-icon">✦</span><span>Ưu tiên <strong>học qua dự án</strong></span></div>
+          <div class="strip-item"><span class="tiny-icon">↗</span><span>Mục tiêu <strong>tạo sản phẩm có ích</strong></span></div>
+          <div class="strip-item"><span class="tiny-icon">♡</span><span>Luôn giữ tinh thần <strong>tò mò</strong></span></div>
+        </div>
+      </div>
+
+      <section class="section page-view" id="about">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><div class="section-kicker">01 · About me</div><h2 class="section-title">Một chút về mình</h2></div>
+            <p class="section-subtitle"></p>
+          </div>
+          <div class="about-grid">
+            <article class="panel profile-panel reveal">
+              <div class="profile-head">
+                <div class="avatar"><img src="./image/avatar.jpg" alt="Ảnh đại diện minh họa"></div>
+                <div><h3>Lâm Hiếu Đức</h3><p>Sinh viên · UTH</p><span class="skill-status"></span></div>
+              </div>
+              <div class="profile-facts">
+                <div class="fact"><span class="fact-label">Ngành học</span><span class="fact-value">Công nghệ thông tin</span></div>
+                <div class="fact"><span class="fact-label">Quan tâm</span><span class="fact-value">Web, thiết kế, ứng dụng</span></div>
+                <div class="fact"><span class="fact-label">Sở thích</span><span class="fact-value">Thiết kế trò chơi, vẽ, lên ý tưởng</span></div>
+              </div>
+            </article>
+            <article class="panel about-copy reveal">
+              <p>Mình là một người thích lên các ý tưởng và thiết kế chúng thành các dự án nhỏ của riêng mình. Mình thích thiết kế giao diện, giải quyết các vấn đề qua các bài tập và cũng như là các dự án của mình.</p>
+              <p>Mình tin rằng không cần bắt đầu với điều gì quá lớn. Quan trọng là học vững kiến thức cơ bản, thực hành đều đặn, biết nhận phản hồi và cải thiện từng phiên bản.</p>
+              <div class="quote-line"><span class="quote-mark">“</span><span>Face the fear, build the future</span></div>
+              <div class="chip-row"><span class="chip">Ham học hỏi</span><span class="chip">Tư duy logic</span><span class="chip">Làm việc nhóm</span><span class="chip">Kiên trì</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills-section page-view" id="skills">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><div class="section-kicker">02 · Skills</div><h2 class="section-title">Những gì mình đang học</h2></div>
+            <p class="section-subtitle"></p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div><h3>HTML & CSS</h3><p>Xây dựng cấu trúc, bố cục và giao diện web responsive.</p><span class="skill-status">Đang thực hành</span></article>
+            <article class="skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5 3 12l5 7M16 5l5 7-5 7M14 3l-4 18"/></svg></div><h3>JavaScript</h3><p>Tương tác DOM, sự kiện, hiệu ứng và logic phía trình duyệt.</p><span class="skill-status">Đang thực hành</span></article>
+            <article class="skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5 3 12l5 7M16 5l5 7-5 7M14 3l-4 18"/></svg></div><h3>GD Script</h3><p>Thiết kế các dự án nhỏ từ các ý tưởng cá nhân.</p><span class="skill-status">Đang thực hành</span></article>
+            <article class="skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>SQL & Cơ sở dữ liệu</h3><p>Truy vấn, tổ chức dữ liệu và thiết kế bảng cơ bản.</p><span class="skill-status">Đang học</span></article>
+            <article class="skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></svg></div><h3>Thiết kế UI</h3><p>Sắp xếp nội dung, màu sắc, khoảng cách và trải nghiệm dùng.</p><span class="skill-status">Đang cải thiện</span></article>
+            <article class="skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/><circle cx="12" cy="12" r="8.5"/></svg></div><h3>Tư duy giải quyết vấn đề</h3><p>Chia bài toán thành bước nhỏ, kiểm tra và sửa lỗi có hệ thống.</p><span class="skill-status">Rèn luyện mỗi ngày</span></article>
+            <article class="skill-card reveal"><div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Kỹ năng mềm</h3><p>Tự học, giao tiếp rõ ràng, phối hợp và quản lý thời gian.</p><span class="skill-status">Rèn luyện mỗi ngày</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section page-view" id="projects">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><div class="section-kicker">03 · Selected work</div><h2 class="section-title">Dự án nổi bật</h2></div>
+            <p class="section-subtitle"></p>
+          </div>
+          <div class="projects-grid">
+            <article class="panel project-card reveal">
+              <div class="project-cover cover-purple"><div class="cover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.3 4.7L19.5 9l-3.7 3.6.9 5.2-4.7-2.5-4.7 2.5.9-5.2L4.5 9l5.2-1.3L12 3Z"/><path d="M4 21h16"/></svg></div><span class="cover-tag">Game</span></div>
+              <div class="project-content"><div class="project-meta"><span class="status-dot"></span> Dự án cá nhân</div><h3>Desktop Companion</h3><p>Một người bạn nhỏ trên máy tính cùng bạn trò chuyện, chơi đùa.</p><div class="tag-list"><span class="tag">GD Script</span><span class="tag">Godot</span></div><a class="project-link" href="#contact">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+            </article>
+            <article class="panel project-card reveal">
+              <div class="project-cover cover-purple"><div class="cover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.3 4.7L19.5 9l-3.7 3.6.9 5.2-4.7-2.5-4.7 2.5.9-5.2L4.5 9l5.2-1.3L12 3Z"/><path d="M4 21h16"/></svg></div><span class="cover-tag">App</span></div>
+              <div class="project-content"><div class="project-meta"><span class="status-dot"></span> Dự án đang phát triển</div><h3>App thời tiết</h3><p>Một App thời tiết theo đõi theo thời gian thật, thông báo cho người dùng thời tiết hiện tại trên điện thoại.</p><div class="tag-list"><span class="tag">Node.js</span><span class="tag">JavaScript</span><span class="tag">App</span></div><a class="project-link" href="#contact">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+            </article>
+            <article class="panel project-card reveal">
+              <div class="project-cover cover-teal"><div class="cover-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h5M8 16h8"/><path d="m16 12 2 2 3-4"/></svg></div><span class="cover-tag">Web · UI</span></div>
+              <div class="project-content"><div class="project-meta"><span class="status-dot"></span> Bài tập / dự án học tập</div><h3>SafeCheck VN — giao diện web</h3><p>Thiết kế giao diện sáng, dễ đọc cho hồ sơ người dùng, báo cáo đã gửi và khu vực theo dõi thông tin.</p><div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><a class="project-link" href="#contact">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journey-section page-view" id="journey">
+        <div class="shell journey-grid">
+          <article class="panel journey-intro reveal">
+            <div class="section-kicker">04 · My journey</div>
+            <h2 class="section-title" style="margin-bottom:14px">Học bằng cách làm</h2>
+            <p>Mình đang xây nền tảng kiến thức thông qua môn học, bài thực hành và sản phẩm nhỏ. Mỗi dự án là một cơ hội để hiểu sâu hơn và cải thiện cách làm việc.</p>
+            <div class="big-number">1% <span>better</span></div>
+            <p style="font-size:.8rem;margin-bottom:0">Tiến bộ một chút mỗi ngày vẫn là tiến bộ.</p>
+          </article>
+          <article class="panel journey-list reveal">
+            <div class="timeline">
+              <div class="timeline-item"><div class="timeline-date">Giai đoạn hiện tại</div><h3>Học tập và củng cố nền tảng</h3><p>Rèn luyện lập trình web, cơ sở dữ liệu, làm các dự án nhỏ.</p></div>
+              <div class="timeline-item"><div class="timeline-date">Thực hành liên tục</div><h3>Xây dựng dự án cá nhân</h3><p>Chia dự án thành từng chức năng nhỏ, kiểm thử, ghi chú lỗi và hoàn thiện dần.</p></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section page-view" id="contact">
+        <div class="shell">
+          <div class="contact-box reveal">
+            <div>
+              <div class="section-kicker">05 · Get in touch</div>
+              <h2>Cùng kết nối và tạo ra điều thú vị nhé.</h2>
+              <p>Mình luôn sẵn sàng trao đổi về công nghệ, dự án học tập hoặc cơ hội cùng nhau phát triển.</p>
+              <div class="contact-details">
+                <span class="contact-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><span id="emailText">duclh0065@ut.edu.vn</span></span>
+                <span class="contact-detail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><span>https://github.com/HieuDuc0065<small></small></span></span>
+              </div>
+            </div>
+            <div class="contact-actions">
+              <button class="button button-primary" id="copyEmail" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg> Sao chép email</button>
+              <a class="button button-secondary" href="mailto:email-cua-ban@example.com">Gửi email <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="simple-cv" aria-labelledby="cv-name">
+      <div class="cv-container">
+        <div class="cv-tools">
+          <p class="cv-label"></p>
+          <div class="cv-tool-actions">
+            <label class="cv-action" for="cvPhotoInput">＋ Chọn ảnh cá nhân</label>
+            <input id="cvPhotoInput" type="file" accept="image/*" aria-label="Chọn ảnh cá nhân">
+            <button class="cv-action cv-action-primary" id="printSimpleCV" type="button">⎙ In CV / Lưu PDF</button>
+          </div>
+        </div>
+        <header class="cv-top">
+          <div class="cv-photo-wrap">
+            <div class="cv-photo-placeholder" id="cvPhotoFrame"><img id="cvPhotoPreview" alt="Ảnh cá nhân" hidden> <span id="cvPhotoText">Ảnh cá nhân<br>Chọn ảnh để thêm</span></div>
+            <label class="cv-action" for="cvPhotoInput">Tải ảnh lên</label>
+          </div>
+          <div>
+            <p class="cv-headline">SINH VIÊN · CÔNG NGHỆ THÔNG TIN</p>
+            <h1 id="cv-name">Lâm Hiếu Đức</h1>
+            <p class="cv-subtitle">Công nghệ thông tin</p>
+            <p class="cv-summary">Sinh viên yêu thích lập trình, công nghệ và phát triển sản phẩm số. Chủ động học hỏi qua bài thực hành, dự án cá nhân và làm việc theo từng mục tiêu rõ ràng. Mong muốn phát triển nền tảng kỹ thuật và kinh nghiệm thực tế trong môi trường chuyên nghiệp.</p>
+          </div>
+        </header>
+
+        <div class="cv-section">
+          <h2>Thông tin cá nhân</h2>
+          <dl class="cv-info">
+            <dt>Họ và tên</dt><dd>Lâm Hiếu Đức</dd>
+            <dt>Email</dt><dd class="cv-contact">duclh0065@ut.edu.vn <span class="cv-note"></span></dd>
+            <dt>Điện thoại</dt><dd>0813341914</dd>
+            <dt>Địa chỉ</dt><dd>Việt Nam</dd>
+            <dt>GitHub / LinkedIn</dt><dd><span class="cv-link">https://github.com/HieuDuc0065</span></dd>
+          </dl>
+        </div>
+
+        <div class="cv-columns">
+          <div class="cv-section">
+            <h2>Học vấn</h2>
+            <article class="cv-entry">
+              <h3>Công nghệ thông tin</h3>
+              <p class="cv-meta">UTH · 2023 – 2026</p>
+              <p>Đang học các kiến thức nền tảng về lập trình, cơ sở dữ liệu, mạng máy tính và ứng dụng công nghệ.</p>
+            </article>
+          </div>
+          <div class="cv-section">
+            <h2>Kinh nghiệm</h2>
+            <article class="cv-entry">
+              <h3>Thực hành lập trình và làm việc nhóm</h3>
+              <p class="cv-meta">Bài tập học phần / dự án cá nhân</p>
+              <p>Phân tích yêu cầu, xây dựng chức năng nhỏ, kiểm thử kết quả và khắc phục lỗi. Đây là kinh nghiệm học tập mẫu; thay bằng công việc, thực tập hoặc nhiệm vụ thực tế của bạn nếu có.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Dự án / Hoạt động</h2>
+          <div class="cv-columns">
+            <article class="cv-entry">
+              <h3>App thời tiết</h3>
+              <p class="cv-meta">HTML · CSS · JavaScript</p>
+              <p>Một App thời tiết theo đõi theo thời gian thật, thông báo cho người dùng thời tiết hiện tại trên điện thoại</p>
+            </article>
+            <article class="cv-entry">
+              <h3>Desktop Companion — Người bạn nhỏ trên máy tính</h3>
+              <p class="cv-meta">GD Script · Godot</p>
+              <p>Một người bạn nhỏ trên máy tính cùng bạn trò chuyện, chơi đùa.</p>
+            </article>
+            <article class="cv-entry">
+              <h3>SafeCheck VN — giao diện web</h3>
+              <p class="cv-meta">HTML · CSS · JavaScript</p>
+              <p>Thực hành thiết kế giao diện hồ sơ, theo dõi báo cáo và sắp xếp nội dung hướng tới trải nghiệm dễ sử dụng.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="cv-columns">
+          <div class="cv-section">
+            <h2>Chứng chỉ</h2>
+            <article class="cv-entry">
+              <h3>Chứng chỉ / khóa học đã hoàn thành</h3>
+              <p class="cv-meta">Tên đơn vị cấp · Năm cấp</p>
+              <p>Thêm tên chứng chỉ, đơn vị cấp và thời gian sau khi hoàn thành. Nếu chưa có, bạn có thể thay bằng “Đang cập nhật” hoặc xóa mục này.</p>
+            </article>
+          </div>
+          <div class="cv-section">
+            <h2>Kỹ năng</h2>
+            <div class="cv-skill-list">
+              <span class="cv-pill">HTML & CSS</span><span class="cv-pill">JavaScript cơ bản</span>
+              <span class="cv-pill">Python cơ bản</span><span class="cv-pill">SQL</span>
+              <span class="cv-pill">Tự học</span><span class="cv-pill">Làm việc nhóm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-section">
+          <h2>Sở thích</h2>
+          <div class="cv-hobby-list"><span class="cv-pill">Lập trình dự án nhỏ</span><span class="cv-pill">Khám phá công nghệ mới</span><span class="cv-pill">Trò chơi điện tử</span><span class="cv-pill">Âm nhạc</span><span class="cv-pill">Học hỏi kỹ năng mới</span></div>
+        </div>
+        <div class="cv-footer"><span>CV</span></div>
+      </div>
+    </section>
+    <footer><div class="shell footer-inner"><span>© <span id="year"></span> <strong>Lâm Hiếu Đức</strong></span><span>Thiết kế bằng HTML, CSS và JavaScript · Made with ♡</span><span>Nhạc nền: <a href="https://amclassical.com/" target="_blank" rel="noopener">A-M Classical</a> (CC BY)</span></div></footer>
+    <button class="back-top" id="backTop" type="button" aria-label="Lên đầu trang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6M12 9v12"/></svg></button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
